@@ -5,6 +5,8 @@
 #define LIGHT3 10
 #define LIGHT4 11
 
+#define lighttime 500
+
 void setup()
 {
     pinMode(LIGHT1, OUTPUT);
@@ -19,19 +21,19 @@ void loop()
 {
   TurnAllLightsOff();
   digitalWrite(LIGHT1, HIGH);
-  delay(500);
+  delay(lighttime);
   
   TurnAllLightsOff();
   digitalWrite(LIGHT2, HIGH);
-  delay(500);
+  delay(lighttime);
 
   TurnAllLightsOff();
   digitalWrite(LIGHT3, HIGH);
-  delay(500);
+  delay(lighttime);
 
   TurnAllLightsOff();
   digitalWrite(LIGHT4, HIGH);
-  delay(500);
+  delay(lighttime);
 }
 
 void TurnAllLightsOff()
